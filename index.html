@@ -6,7 +6,7 @@
 <body>
   <div id="flag-container"></div>
   <script>
-    fetch('http://localhost/flag?flag=hspace{')
+    fetch('http://3.36.132.18:22222/flag?flag=hspace{')
       .then(response => response.text())
       .then(data => {
         document.getElementById('flag-container').textContent = data;
